@@ -1,0 +1,28 @@
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%r",
+					"istime": true
+				}
+			},
+            {
+                "function": "powerline.segments.common.wthr.weather",
+                "priority": 50,
+                "args": {
+                    "unit": "F",
+                    "location_query": "CITY, STATE"
+                }
+            },
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+		]
+	}
+}
