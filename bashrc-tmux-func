@@ -3,3 +3,7 @@ ssh() {
     command ssh "$@"
     exit
 }
+
+wn() {
+    tmux rename-window $(basename "$PWD")
+}
